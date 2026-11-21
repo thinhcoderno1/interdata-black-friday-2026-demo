@@ -429,8 +429,13 @@
   margin-top: 6px;
 }
 .bestPlans .bestPlansHeading {
+  container-type: inline-size;
   display: block;
   text-align: center;
+}
+.bestPlansHeading h2 {
+  font-size: min(var(--bf-heading-size), 6.7cqi);
+  white-space: nowrap;
 }
 .billingControl {
   width: min(100%, 680px);
