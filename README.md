@@ -24,7 +24,7 @@ Tạo ứng dụng từ **Public Repository** và chọn nhánh `main`. Dùng c�
 | Output Type / Site Type | `Web application` / `Dynamic` |
 | Application Port | `3000` |
 
-`railpack.json` chọn Node.js 22 và cấu hình các lệnh `npm ci`, `npm run build`, `npm run start`. Nếu đổi cổng nội bộ, đặt `PORT` khi chạy ứng dụng trùng với cổng đó. Sau khi deploy, mở tên miền ứng dụng để kiểm tra trang chủ. Có thể dùng `/` làm đường dẫn kiểm tra tình trạng ứng dụng.
+`railpack.json` chọn Node.js 22 và chạy `npm run start`. Railpack dùng `package-lock.json` để cài dependencies với `npm ci` và chạy script `npm run build`. Nếu đổi cổng nội bộ, đặt `PORT` khi chạy ứng dụng trùng với cổng đó. Sau khi deploy, mở tên miền ứng dụng để kiểm tra trang chủ. Có thể dùng `/` làm đường dẫn kiểm tra tình trạng ứng dụng.
 
 ## Chỉnh dữ liệu cho buổi duyệt
 
