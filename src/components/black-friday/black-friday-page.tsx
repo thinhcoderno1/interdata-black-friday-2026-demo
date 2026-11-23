@@ -64,7 +64,7 @@ const marqueeMessages = [
   "Nâng Cấp Hạ Tầng",
 ];
 
-const threeYearCycle = bestPlanCycles[2];
+const [oneYearCycle, , threeYearCycle] = bestPlanCycles;
 
 const planResources = [
   { key: "cpu", unit: "vCore", icon: Cpu },
@@ -215,7 +215,7 @@ export function BlackFridayPage({
   vps: DemoBestPlan[];
   coupons: BlackFridayCouponGroup[];
 }) {
-  const [selectedCycle, setCycle] = useState<BestPlanCycle>(threeYearCycle);
+  const [selectedCycle, setCycle] = useState<BestPlanCycle>(oneYearCycle);
   const cycleTabs = useRef<(HTMLButtonElement | null)[]>([]);
   const planGrid = useRef<HTMLDivElement>(null);
   const flashSaleVisible = useFlashSaleVisibility();
